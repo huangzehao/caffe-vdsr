@@ -11,6 +11,7 @@ Test: Matconvnet
 
 # Usage
 Train:
+
 1. Place the "Train" folder into "($Caffe_Dir)/examples/", and rename "Train" to "VDSR"
 
 2. Open MATLAB and direct to ($Caffe_Dir)/example/VDSR, run 
