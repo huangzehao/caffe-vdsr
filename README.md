@@ -15,7 +15,7 @@ Train:
 1. Place the "Train" folder into "($Caffe_Dir)/examples/", and rename "Train" to "VDSR"
 
 2. Open MATLAB and direct to ($Caffe_Dir)/example/VDSR, run 
-"generate_train.m" and "generate_test.m" to generate training and test data.
+"generate_train.m" and "generate_test.m" to generate training and test data. (Code from SRCNN)
 
 3. To train VDSR, run
 ./build/tools/caffe train --solver examples/VDSR/VDSR_solver.prototxt
