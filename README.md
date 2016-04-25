@@ -2,7 +2,7 @@
 This is a implementation of (["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://arxiv.org/abs/1511.04587)) (CVPR 2016 Oral Paper) in caffe.
 
 # Instruction
-VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 convolution layers for single image super-resolution. The performance of VDSR is better than other state-of-the-art SISR methods, such as SRCNN, A+ and CSCN.
+VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 convolution layers for single image super-resolution. The performance of VDSR is better than other state-of-the-art SISR methods, such as ([SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html)), ([A+](http://www.vision.ee.ethz.ch/~timofter/ACCV2014_ID820_SUPPLEMENTARY/)) and ([CSCN](http://www.ifp.illinois.edu/~dingliu2/iccv15/)) ([My implementation](https://github.com/huangzehao/SCN_Matlab)).
 
 # Dependencies
 Train: Caffe
