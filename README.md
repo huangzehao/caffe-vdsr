@@ -20,7 +20,7 @@ Train:
 3. To train VDSR, run
 ./build/tools/caffe train --solver examples/VDSR/VDSR_solver.prototxt
 
-4. Set clip_gradients in VDSR_solver.prototxt to solve gradient explosion problem
+4. Set clip_gradients in VDSR_solver.prototxt to solve gradient explosion problem, 0.1 or 1 is a good choice
 
 5. Change the learning rate when the error plateaus
 
