@@ -4,18 +4,14 @@ This is a implementation of ["Accurate Image Super-Resolution Using Very Deep Co
 ## Instruction
 VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 convolution layers for single image super-resolution. The performance of VDSR is better than other state-of-the-art SISR methods, such as [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html), [A+](http://www.vision.ee.ethz.ch/~timofter/ACCV2014_ID820_SUPPLEMENTARY/) and [CSCN](http://www.ifp.illinois.edu/~dingliu2/iccv15/) ([My implementation of CSCN](https://github.com/huangzehao/SCN_Matlab)).
 
-## References
-Please cite [1] if you use this code in your work, thank you!
-
-[1] Jiwon Kim, Jung Kwon Lee, Kyoung Mu Lee, Accurate Image Super-Resolution Using Very Deep Convolutional Networks, arXiv:1511.04587, 2015
-
 ## Dependencies
-Train: Caffe
+### Train
+- [Caffe](http://caffe.berkeleyvision.org/)
+### Test
+- [MatConvNet](http://www.vlfeat.org/matconvnet/)
 
-Test: Matconvnet
-
-# Usage
-Train:
+## Usage
+### Train
 
 1. Place the "Train" folder into "($Caffe_Dir)/examples/", and rename "Train" to "VDSR"
 
@@ -29,7 +25,13 @@ Train:
 
 5. Change the learning rate when the error plateaus
 
-Test:
+### Test
+
+## Different from original paper
 
 
-# Performance
+## Performance
+## References
+Please cite [1] if you use this code in your work, thank you!
+
+[1] Jiwon Kim, Jung Kwon Lee, Kyoung Mu Lee, Accurate Image Super-Resolution Using Very Deep Convolutional Networks, arXiv:1511.04587, 2015
