@@ -31,7 +31,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -63,7 +63,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -95,7 +95,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -127,7 +127,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -159,7 +159,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -191,7 +191,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -223,7 +223,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -255,7 +255,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -287,7 +287,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -319,7 +319,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -351,7 +351,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -383,7 +383,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -415,7 +415,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -447,7 +447,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -479,7 +479,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -511,7 +511,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -543,7 +543,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -575,7 +575,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -607,7 +607,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 64
@@ -639,7 +639,7 @@ layer {
     lr_mult: 1
   }
   param {
-    lr_mult: 1
+    lr_mult: 0.1
   }
   convolution_param {
     num_output: 1
