@@ -28,9 +28,23 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 ### Test
 
+1. "Demo_SR_Conv.m" is a simple test code. Just run it and you will get the result.
+
+2. "VDSR_170000.mat" is a model trained by myself.
+
 ## Different from original paper
+## Training Dataset
+My implementation: 91 images (with data augumentation and only factor 2) 
 
+Original paper: 291 images (with data augumentation and factor 2, 3 and 4)
+## Multi scale
+My implementation: Casade of 2x to generate 3x and 4x result
 
+Original paper: Multi scale in one model
+## Training Time
+My implementation: about 30 epoch
+
+Original paper: about 80 epoch
 ## Performance
 ## References
 Please cite [1] if you use this code in your work, thank you!
