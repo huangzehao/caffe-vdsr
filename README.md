@@ -34,15 +34,15 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 ## Different from original paper
 With the limitation of time and hardware conditions，I didn't do completed training. So there are some differences between this implementation and original paper.
-### Training Dataset
+- Training Dataset
 This implementation: 91 images (with data augumentation and only factor 2) 
 
 Original paper: 291 images (with data augumentation and factor 2, 3 and 4)
-### Multi scale
+- Multi scale
 This implementation: Casade of 2x to generate 3x and 4x result
 
 Original paper: Multi scale in one model
-### Training Time of Final Model
+- Training Time of Final Model
 This implementation: about 30 epoch
 
 Original paper: about 80 epoch
