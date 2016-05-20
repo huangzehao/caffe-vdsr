@@ -33,19 +33,38 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 2. "VDSR_170000.mat" is a model trained by myself.
 
 ## Different from original paper
+With the limitation of time and hardware conditions，I didn't do completed training. So there are some differences between this implementation and original paper.
 ### Training Dataset
-My implementation: 91 images (with data augumentation and only factor 2) 
+This implementation: 91 images (with data augumentation and only factor 2) 
 
 Original paper: 291 images (with data augumentation and factor 2, 3 and 4)
 ### Multi scale
-My implementation: Casade of 2x to generate 3x and 4x result
+This implementation: Casade of 2x to generate 3x and 4x result
 
 Original paper: Multi scale in one model
-### Training Time
-My implementation: about 30 epoch
+### Training Time of Final Model
+This implementation: about 30 epoch
 
 Original paper: about 80 epoch
-## Performance
+## Performance in PSNR
+### Factor 2
+| DataSet        | Original          | This Implementation  |
+| ------------- |:-------------:| -----:|
+| Set5      | 37.53      | 37.46 |
+| Set14     | 33.03      | 32.83|
+| BSD100    | 31.90      | 31.65 |
+### Factor 3
+| DataSet        | Original          | This Implementation  |
+| ------------- |:-------------:| -----:|
+| Set5      | 33.66      | 33.52 |
+| Set14     | 29.77      | 29.55 |
+| BSD100    | 28.82      | 28.62 |
+### Factor 4
+| DataSet        | Original          | This Implementation  |
+| ------------- |:-------------:| -----:|
+| Set5      | 31.35      | 31.14 |
+| Set14     | 28.01      | 27.81 |
+| BSD100    | 27.29      | 27.13 |
 ## References
 Please cite [1] if you use this code in your work, thank you!
 
