@@ -65,6 +65,9 @@ Original paper: about 80 epoch
 | Set5      | 31.35      | 31.14 |
 | Set14     | 28.01      | 27.81 |
 | BSD100    | 27.29      | 27.13 |
+## TODO
+1. Add Super-resolution image results
+2. Complete experiments
 ## References
 Please cite [1] if you use this code in your work, thank you!
 
