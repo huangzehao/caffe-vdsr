@@ -1,5 +1,7 @@
 # Caffe_VDSR
-This is a implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://arxiv.org/abs/1511.04587) (CVPR 2016 Oral Paper) in caffe.
+This is a implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) (CVPR 2016 Oral Paper) in caffe.
+
+[Official test code](http://cv.snu.ac.kr/research/VDSR/)
 
 ## Instruction
 VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 convolution layers for single image super-resolution. The performance of VDSR is better than other state-of-the-art SISR methods, such as [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html), [A+](http://www.vision.ee.ethz.ch/~timofter/ACCV2014_ID820_SUPPLEMENTARY/) and [CSCN](http://www.ifp.illinois.edu/~dingliu2/iccv15/) ([My implementation of CSCN](https://github.com/huangzehao/SCN_Matlab)).
@@ -31,6 +33,7 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 1. "Demo_SR_Conv.m" is a simple test code. Just run it and you will get the result.
 
 2. "VDSR_170000.mat" is a model trained by myself.
+
 
 ## Different from original paper
 Because of the limitation of hardware conditions，I didn't do completed training. So there are some differences between this implementation and original paper.
@@ -65,11 +68,8 @@ Original paper: about 80 epoch
 | Set5      | 31.35      | 31.14 |
 | Set14     | 28.01      | 27.81 |
 | BSD100    | 27.29      | 27.13 |
-## TODO
-1. Add Super-resolution image results
-2. Complete experiments
 
 ## References
 Please cite [1] if you use this code in your work, thank you!
 
-[1] Jiwon Kim, Jung Kwon Lee, Kyoung Mu Lee, Accurate Image Super-Resolution Using Very Deep Convolutional Networks, arXiv:1511.04587, 2015
+[1] Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
