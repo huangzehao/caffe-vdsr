@@ -17,7 +17,7 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 1. Place the "Train" folder into "($Caffe_Dir)/examples/", and rename "Train" to "VDSR"
 
 2. Open MATLAB and direct to ($Caffe_Dir)/example/VDSR, run 
-"generate_train.m" and "generate_test.m" to generate training and test data. (Code from SRCNN)
+"generate_train.m" and "generate_test.m" to generate training and test data (Code from SRCNN)
 
 3. To train VDSR, run
 ./build/tools/caffe train --solver examples/VDSR/VDSR_solver.prototxt
@@ -28,11 +28,11 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 ### Test
 
-1. "Demo_SR_Conv.m" is a simple test code. Just run it and you will get the result.
+1. "Demo_SR_Conv.m" is a simple test code. Just run it and you will get the result
 
-2. "VDSR_170000.mat" is a model trained by myself.
+2. "VDSR_170000.mat" is a model trained by myself
 
-3. [Official Test Code](http://cv.snu.ac.kr/research/VDSR/)
+3. "VDSR_Official.mat" is a official model converted from [Official Test Code](http://cv.snu.ac.kr/research/VDSR/)
 
 
 ## Different from original paper
@@ -41,7 +41,7 @@ Because of the limitation of hardware conditions，I didn't do completed trainin
 This implementation: 91 images (with data augumentation and only factor 2) 
 
 Original paper: 291 images (with data augumentation and factor 2, 3 and 4)
-### Multi scale
+### Multi Scale
 This implementation: Casade of 2x to generate 3x and 4x result
 
 Original paper: Multi scale in one model
