@@ -32,7 +32,7 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 2. "VDSR_170000.mat" is a model trained by myself
 
-3. "VDSR_Official.mat" is a official model converted from [Official Test Code](http://cv.snu.ac.kr/research/VDSR/)
+3. "VDSR_Official.mat" is an official model converted from [Official Test Code](http://cv.snu.ac.kr/research/VDSR/)
 
 
 ## Different from original paper
