@@ -4,7 +4,7 @@ clear all;
 run matconvnet/matlab/vl_setupnn;
 
 addpath('utils')
-load('VDSR_170000.mat');
+load('VDSR_Official.mat');
 use_gpu = 0;
 im_l = imread('./data/slena.bmp');
 im_gt = imread('./data/mlena.bmp');
