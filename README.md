@@ -26,6 +26,8 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 5. Change the learning rate when the error plateaus
 
+6. After training, run "caffemodel2mat.m" to convert caffemodel to mat for testing (matcaffe is required) 
+
 ### Test
 
 1. "Demo_SR_Conv.m" is a simple test code. Just run it and you will get the result
