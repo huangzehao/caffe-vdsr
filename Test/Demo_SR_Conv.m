@@ -4,13 +4,21 @@ clear all;
 run matconvnet/matlab/vl_setupnn;
 
 addpath('utils')
-load('VDSR_Official.mat');
-use_gpu = 0;
-im_l = imread('./data/slena.bmp');
-im_gt = imread('./data/mlena.bmp');
 
-up_scale = 2;
+% the performance of 'VDSR_Official' model is better than 'VDSR_170000'
+% and it fit different scales, 'VDSR_170000' need cascade to generate 
+% good results when factor is 3 and 4
+load('VDSR_Official.mat');
+use_cascade = 0;
+
+% load('VDSR_170000.mat');
+% use_cascade = 1;
+
+use_gpu = 0;
+up_scale = 3;
 shave = 1;
+
+im_gt = imread('./Data/Set5/butterfly_GT.bmp');
 
 if use_gpu
     for i = 1:20
@@ -20,6 +28,7 @@ if use_gpu
 end
 
 im_gt = modcrop(im_gt,up_scale);
+im_l = imresize(im_gt,1/up_scale,'bicubic');
 im_gt = double(im_gt);
 im_l  = double(im_l) / 255.0;
 
@@ -37,7 +46,7 @@ if use_gpu
     im_l_y = gpuArray(im_l_y);
 end
 tic;
-im_h_y = VDSR_Matconvnet(im_l_y, model,up_scale);
+im_h_y = VDSR_Matconvnet(im_l_y, model,up_scale,use_cascade);
 toc;
 if use_gpu
     im_h_y = gather(im_h_y);

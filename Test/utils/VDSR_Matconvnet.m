@@ -1,6 +1,9 @@
-function im_h_y = VDSR_Matconvnet(im_l_y,model,scale)
-
-model_scale = 2;
+function im_h_y = VDSR_Matconvnet(im_l_y,model,scale,use_cascade)
+if use_cascade
+    model_scale = 2;
+else
+    model_scale = scale;
+end
 iter_all = ceil(log(scale)/log(model_scale));
 [lh,lw] = size(im_l_y);
 weight = model.weight;
