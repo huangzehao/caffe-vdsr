@@ -38,7 +38,7 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 
 ## Different from original paper
-Because of the limitation of hardware conditions，I didn't do completed training. So there are some differences between this implementation and original paper.
+Because of the limitation of hardware conditions, I didn't do complete training. So there are some differences between this implementation and original paper.
 ### Training Dataset
 This implementation: 91 images (with data augumentation and only factor 2) 
 
