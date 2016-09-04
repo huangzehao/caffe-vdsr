@@ -49,7 +49,7 @@ im_h_ycbcr(:,:,1) = im_h_y / 255.0;
 im_h  = ycbcr2rgb(im_h_ycbcr) * 255.0;
 
 figure;imshow(uint8(im_b));title('Bicubic Interpolation');
-figure;imshow(uint8(im_h));title('SCN Reconstruction');
+figure;imshow(uint8(im_h));title('SR Reconstruction');
 figure;imshow(uint8(im_gt));title('Origin');
 
 if shave == 1;
