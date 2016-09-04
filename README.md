@@ -38,7 +38,7 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 
 
 ## Different from original paper
-Because of the limitation of hardware conditions, I didn't do complete training. So there are some differences between this implementation and original paper.
+Because of the limitation of hardware conditions, I didn't do complete training. So there are some differences between this implementation ("VDSR_170000.mat") and original paper ("VDSR_Official.mat").
 ### Training Dataset
 This implementation: 91 images (with data augumentation and only factor 2) 
 
@@ -53,19 +53,19 @@ This implementation: about 30 epoch
 Original paper: about 80 epoch
 ## Performance in PSNR
 ### Factor 2
-| DataSet        | Original          | This Implementation  |
+| DataSet        | VDSR_Official          | VDSR_170000  |
 | ------------- |:-------------:| -----:|
 | Set5      | 37.53      | 37.46 |
 | Set14     | 33.03      | 32.83|
 | BSD100    | 31.90      | 31.65 |
 ### Factor 3
-| DataSet        | Original          | This Implementation  |
+| DataSet        | VDSR_Official          | VDSR_170000  |
 | ------------- |:-------------:| -----:|
 | Set5      | 33.66      | 33.52 |
 | Set14     | 29.77      | 29.55 |
 | BSD100    | 28.82      | 28.62 |
 ### Factor 4
-| DataSet        | Original          | This Implementation  |
+| DataSet        | VDSR_Official          | VDSR_170000  |
 | ------------- |:-------------:| -----:|
 | Set5      | 31.35      | 31.14 |
 | Set14     | 28.01      | 27.81 |
