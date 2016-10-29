@@ -1,17 +1,21 @@
-# Caffe_VDSR
+Caffe_VDSR
+==============
 This is an implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) (CVPR 2016 Oral Paper) in caffe.
 
-## Instruction
+Instruction
+------- 
 VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 convolutional layers for single image super-resolution. The performance of VDSR is better than other state-of-the-art SISR methods, such as [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html), [A+](http://www.vision.ee.ethz.ch/~timofter/ACCV2014_ID820_SUPPLEMENTARY/) and [CSCN](http://www.ifp.illinois.edu/~dingliu2/iccv15/) ([My implementation of CSCN](https://github.com/huangzehao/SCN_Matlab)).
 
-## Dependencies
+Dependencies
+------- 
 ### Train
 - [Caffe](http://caffe.berkeleyvision.org/)
 
 ### Test
 - [MatConvNet](http://www.vlfeat.org/matconvnet/)
 
-## Usage
+Usage
+------- 
 ### Train
 
 1. Place the "Train" folder into "($Caffe_Dir)/examples/", and rename "Train" to "VDSR"
@@ -20,8 +24,9 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 "generate_train.m" and "generate_test.m" to generate training and test data (Code from SRCNN)
 
 3. To train VDSR, run
+```Bash
 ./build/tools/caffe train --solver examples/VDSR/VDSR_solver.prototxt
-
+```
 4. Set clip_gradients in VDSR_solver.prototxt to solve gradient explosion problem, 0.1 or 1 is a good choice
 
 5. Change the learning rate when the error plateaus
@@ -37,7 +42,8 @@ VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 c
 3. "VDSR_Official.mat" is an official model converted from [Official Test Code](http://cv.snu.ac.kr/research/VDSR/)
 
 
-## Different from original paper
+Different from original paper
+------- 
 Because of the limitation of hardware conditions, I didn't do complete training. So there are some differences between this implementation ("VDSR_170000.mat") and original paper ("VDSR_Official.mat").
 ### Training Dataset
 This implementation: 91 images (with data augumentation and only factor 2) 
@@ -51,7 +57,8 @@ Original paper: Multi scale in one model
 This implementation: about 30 epoch
 
 Original paper: about 80 epoch
-## Performance in PSNR
+Performance in PSNR
+------- 
 ### Factor 2
 | DataSet        | VDSR_Official          | VDSR_170000  |
 | ------------- |:-------------:| -----:|
@@ -71,7 +78,8 @@ Original paper: about 80 epoch
 | Set14     | 28.01      | 27.81 |
 | BSD100    | 27.29      | 27.13 |
 
-## References
+References
+------- 
 Please cite [1] if you use this code in your work, thank you!
 
 [1] Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
