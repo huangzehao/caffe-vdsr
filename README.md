@@ -24,8 +24,8 @@ Usage
 "generate_train.m" and "generate_test.m" to generate training and test data (Code from SRCNN)
 
 3. To train VDSR, run
-
-./build/tools/caffe train --solver examples/VDSR/VDSR_solver.prototxt
+```./build/tools/caffe train --solver examples/VDSR/VDSR_solver.prototxt
+```
 
 4. Set clip_gradients in VDSR_solver.prototxt to solve gradient explosion problem, 0.1 or 1 is a good choice
 
