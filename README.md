@@ -2,6 +2,13 @@ Caffe_VDSR
 ==============
 This is an implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) (CVPR 2016 Oral Paper) in caffe.
 
+Update
+-------
+### Training Samples
+I trained my "VDSR_170000" model by about 300000 training samples (1638 images augumented from 91 images). So, please do data augumentation if you want to get good performances.
+### Multi Scale Training
+I trained a new model by multi scale data augumentation. But there are not obvious improvemets between multi scale model and my single scale model. Replies welcome, if anyone has experience on multi scale training.
+
 Instruction
 ------- 
 VDSR (Very Deep network for Super-Resolution) is an end-to-end network with 20 convolutional layers for single image super-resolution. The performance of VDSR is better than other state-of-the-art SISR methods, such as [SRCNN](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html), [A+](http://www.vision.ee.ethz.ch/~timofter/ACCV2014_ID820_SUPPLEMENTARY/) and [CSCN](http://www.ifp.illinois.edu/~dingliu2/iccv15/) ([My implementation of CSCN](https://github.com/huangzehao/SCN_Matlab)).
