@@ -17,8 +17,8 @@ Recommend to use "VDSR_Official.mat" if you just want to do some test. "VDSR_Off
 ### Solver Setting
 Recommend to train VDSR following the setting of paper. Train it about 80 epoches and decrease learning rate by dividing 10 every 20 epoches. It means that you should modify the solver_prototxt in Train folder like this:
 ```
-stepsize: #trainingsamples / 64 * 20
-max_iter: #trainingsamples / 64 * 80
+stepsize: #trainingsamples / batchsize * 20
+max_iter: #trainingsamples / batchsize * 80
 ```
 
 Dependencies
