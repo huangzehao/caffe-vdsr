@@ -13,7 +13,7 @@ I trained my "VDSR_170000" model by about 300000 training samples (1638 images a
 ### Multi Scale Training
 I trained a new model by multi scale data augumentation. But there are not obvious improvemets between multi scale model and my single scale model. Replies welcome, if anyone has experience on multi scale training.
 ### VDSR Official Model
-Recommend to use "VDSR_Official.mat" if you just want to do some test. "VDSR_Official.mat" achieve better performance than "VDSR_170000.mat" and it supports multi-scale test (You can test different scales super-resolution in only one model).
+Recommend to use "VDSR_Official.mat" if you just want to do some test. "VDSR_Official.mat" achieve better performance than "VDSR_170000.mat" and it supports multi-scale test (you can test different scales super-resolution in only one model).
 
 Dependencies
 ------- 
