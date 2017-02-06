@@ -5,14 +5,9 @@ run matconvnet/matlab/vl_setupnn;
 
 addpath('utils')
 
-% the performance of 'VDSR_Official' model is better than 'VDSR_170000'
-% and it fit different scales, 'VDSR_170000' need cascade to generate 
-% good results when factor is 3 and 4
 load('VDSR_Official.mat');
+%load('VDSR_Adam.mat');
 use_cascade = 0;
-
-% load('VDSR_170000.mat');
-% use_cascade = 1;
 
 use_gpu = 0;
 up_scale = 3;

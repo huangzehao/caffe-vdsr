@@ -1,24 +1,19 @@
 # The train/test net protocol buffer definition
 net: "examples/VDSR/VDSR_net.prototxt"
-test_iter: 556
-# Carry out testing every 500 training iterations.
+test_iter: 457
 test_interval: 500
 # The base learning rate, momentum and the weight decay of the network.
-base_lr: 0.1
-momentum: 0.9
+type: "Adam"
+base_lr: 0.0001
 weight_decay: 0.0001
-clip_gradients: 0.1
 # The learning rate policy
-lr_policy: "step"
-gamma: 0.1
-stepsize: 116840
+lr_policy: "fixed"
 # Display every 100 iterations
 display: 100
 # The maximum number of iterations
-max_iter: 467360
+max_iter: 935840
 # snapshot intermediate results
-snapshot: 500
+snapshot: 5000
 snapshot_prefix: "examples/VDSR/Model/"
 # solver mode: CPU or GPU
 solver_mode: GPU
-
