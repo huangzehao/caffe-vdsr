@@ -31,10 +31,7 @@ im_l  = double(im_l) / 255.0;
 if C == 3
     im_l_ycbcr = rgb2ycbcr(im_l);
 else
-    im_l_ycbcr = zeros(H,W,C);
-    im_l_ycbcr(:,:,1) = im_l;
-    im_l_ycbcr(:,:,2) = im_l;
-    im_l_ycbcr(:,:,3) = im_l;
+    im_l_ycbcr = im_l;
 end
 im_l_y = im_l_ycbcr(:,:,1);
 if use_gpu
@@ -48,9 +45,14 @@ if use_gpu
 end
 im_h_y = im_h_y * 255;
 im_h_ycbcr = imresize(im_l_ycbcr,up_scale,'bicubic');
-im_b = ycbcr2rgb(im_h_ycbcr) * 255.0;
-im_h_ycbcr(:,:,1) = im_h_y / 255.0;
-im_h  = ycbcr2rgb(im_h_ycbcr) * 255.0;
+if C == 3
+    im_b = ycbcr2rgb(im_h_ycbcr) * 255.0;
+    im_h_ycbcr(:,:,1) = im_h_y / 255.0;
+    im_h  = ycbcr2rgb(im_h_ycbcr) * 255.0;
+else
+    im_h = im_h_y;
+    im_b = im_y_cbcr * 255.0;
+end
 
 figure;imshow(uint8(im_b));title('Bicubic Interpolation');
 figure;imshow(uint8(im_h));title('SR Reconstruction');
