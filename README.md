@@ -72,6 +72,6 @@ Performance in PSNR
 
 References
 -------
-Please cite [1] if you use this code in your work, thank you!
+Please cite [1] and this repository if you use this code in your work, thank you!
 
 [1] Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
