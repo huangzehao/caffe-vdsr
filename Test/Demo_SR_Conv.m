@@ -51,7 +51,7 @@ if C == 3
     im_h  = ycbcr2rgb(im_h_ycbcr) * 255.0;
 else
     im_h = im_h_y;
-    im_b = im_y_cbcr * 255.0;
+    im_b = im_h_ycbcr * 255.0;
 end
 
 figure;imshow(uint8(im_b));title('Bicubic Interpolation');
